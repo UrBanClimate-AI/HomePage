@@ -5,4 +5,4 @@
 - 배포: GitHub Pages (main 브랜치 루트)
 - 도메인: urbanclimateai.com
 - 페이지: index.html(허브), climate-rnd.html(기후테크 연구개발·준비중), defense.html(방산 기후 분야·준비중)
-- 하수구 막힘 서비스 랜딩: 하수구막힘.org (별도 저장소)
+- 하수구 막힘 서비스 랜딩: https://github.com/UrBanClimate-AI/baro-ddulrim-home (하수구막힘.org)

@@ -23,6 +23,9 @@ body {
   background: var(--bg);
   line-height: 1.65;
   word-break: keep-all;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 img { max-width: 100%; display: block; }
@@ -47,7 +50,7 @@ a { color: inherit; text-decoration: none; }
 }
 .logo .mark {
   width: 32px; height: 32px; border-radius: 9px; flex: none;
-  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  background: var(--accent);
   display: grid; place-items: center;
 }
 .logo .mark svg { width: 19px; height: 19px; }
@@ -80,10 +83,7 @@ a { color: inherit; text-decoration: none; }
   font-size: clamp(30px, 4.6vw, 46px); font-weight: 850;
   letter-spacing: -0.03em; line-height: 1.28; color: var(--navy);
 }
-.hub-hero h1 .accent {
-  background: linear-gradient(120deg, var(--accent-2), var(--accent));
-  -webkit-background-clip: text; background-clip: text; color: transparent;
-}
+.hub-hero h1 .accent { color: var(--accent); }
 .hub-hero p {
   margin: 18px auto 0; max-width: 40em;
   color: var(--muted); font-size: clamp(15px, 1.6vw, 17.5px);
@@ -149,7 +149,7 @@ a { color: inherit; text-decoration: none; }
 .back-home {
   display: inline-flex; align-items: center; gap: 8px; margin-top: 28px;
   font-weight: 800; font-size: 15px; color: #fff;
-  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  background: var(--accent);
   padding: 13px 26px; border-radius: 14px;
   box-shadow: 0 14px 30px -12px rgba(14, 159, 138, 0.5);
   transition: transform 0.2s;
@@ -158,6 +158,7 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- footer ---------- */
 .site-footer {
+  margin-top: auto;
   border-top: 1px solid var(--line); background: #fff;
   padding: 34px 0 40px; font-size: 13.5px; color: var(--muted);
 }
